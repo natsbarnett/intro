@@ -1,0 +1,115 @@
+:root {
+    --black: #1e1e1e;
+    --white: #f1f1f1;
+    --blue: #bedbff;
+    --blue-rgba : rgba(190,219,255, 0.3);
+    --dark-blue: #00295a;
+}
+
+@font-face {
+    font-family: 'poppins';
+    src: url("../font/poppins/Poppins-Medium.ttf");
+}
+
+body {
+    background-color: var(--black);
+    color: var(--white);
+    font-family: 'poppins';
+}
+
+header .desktop-nav div a {
+    color: var(--blue);
+    transition: 0.3s color ease-in-out;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 25px;
+    padding: 10px 20px;
+}
+
+
+
+main {
+    margin: 20px 40px;
+}
+
+.prof-link {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.prof-link a {
+    flex: 0 0 50%;
+}
+
+.prof-link p {
+    padding: 20px 20px;
+    background-color: var(--blue);
+    border-radius: 8px;
+}
+
+.content .profile .profile-title p {
+    display: none !important;
+}
+
+.content .prof-link a:any-link {
+    color: var(--black);
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.socials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+@media (min-width:800px) {
+
+    header .desktop-nav div {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    header .desktop-nav a:hover {
+        color: var(--white);
+    }
+
+
+    main {
+        margin: 20px 140px !important;
+    }
+
+   
+
+    .mobile-nav {
+        display: none;
+    }
+}
+
+
+
+
+/*  Largeur  */
+::-webkit-scrollbar {
+    width: 5px;
+
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--black);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--blue);
+    border-radius: 90px;
+}
+
+/* Handle au hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--white);
+    transition: 0.2s;
+}
